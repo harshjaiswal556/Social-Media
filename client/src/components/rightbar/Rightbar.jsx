@@ -3,10 +3,11 @@ import { Users } from "../../dummyData"
 import Online from "../online/Online"
 export default function Rightbar({ profile }) {
     const HomeRightBar = () => {
+        const PF = process.env.REACT_APP_PUBLIC_FOLDER;
         return (
             <>
                 <div className="birthdayContainer">
-                    <img src="assests/heart.png" className="birthdayImg" height="30px" alt="" />
+                    <img src={PF+"/heart.png"} className="birthdayImg" height="30px" alt="" />
                     <span className="birthdayText"> <b>Harsh</b> and 3 other friends have birthday today. </span>
                 </div>
                 <img src="assests/like.png" alt="" className="rightbarAd" />
@@ -20,6 +21,7 @@ export default function Rightbar({ profile }) {
         )
     }
     const ProfileRightbar = () => {
+        const PF = process.env.REACT_APP_PUBLIC_FOLDER;
         return (
             <>
                 <h4 className="rightbarTitle">User Info Title</h4>
@@ -40,19 +42,19 @@ export default function Rightbar({ profile }) {
                 <h4 className="rightbarTitle">User Friends</h4>
                 <div className="rightbarFollowings">
                     <div className="rightbarFollowing">
-                        <img src="assests/person/mypic.png" className="rightbarFollowingImg" alt="" />
+                        <img src={PF+"/person/mypic.png"} className="rightbarFollowingImg" alt="" />
                         <span className="rightbarFollowingName">Harsh Jaiswal</span>
                     </div>
                     <div className="rightbarFollowing">
-                        <img src="assests/person/mypic.png" className="rightbarFollowingImg" alt="" />
+                        <img src={PF+"/person/mypic.png"} className="rightbarFollowingImg" alt="" />
                         <span className="rightbarFollowingName">Harsh Jaiswal</span>
                     </div>
                     <div className="rightbarFollowing">
-                        <img src="assests/person/mypic.png" className="rightbarFollowingImg" alt="" />
+                        <img src={PF+"/person/mypic.png"} className="rightbarFollowingImg" alt="" />
                         <span className="rightbarFollowingName">Harsh Jaiswal</span>
                     </div>
                     <div className="rightbarFollowing">
-                        <img src="assests/person/mypic.png" className="rightbarFollowingImg" alt="" />
+                        <img src={PF+"/person/mypic.png"} className="rightbarFollowingImg" alt="" />
                         <span className="rightbarFollowingName">Harsh Jaiswal</span>
                     </div>
                 </div>
